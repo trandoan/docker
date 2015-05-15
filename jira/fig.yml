@@ -4,9 +4,9 @@ jira:
         - "80:8080"
 
 postgres:
-    image: postgres
+    image: database/postgres
     environment:
-        - POSTGRES_PASSWORD=kms123
+        - POSTGRES_PASSWORD=postgres
     volumes:
         - /opt/postgresql/data:/var/lib/postgresql/data/
     ports:
