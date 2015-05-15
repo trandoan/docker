@@ -1,0 +1,13 @@
+jira:
+    image: atlassian/jira
+    ports:
+        - "80:8080"
+
+postgres:
+    image: postgres
+    environment:
+        - POSTGRES_PASSWORD=kms123
+    volumes:
+        - /opt/postgresql/data:/var/lib/postgresql/data/
+    ports:
+        - "5432:5432"
